@@ -47,7 +47,7 @@
 			$icon
 		</a>
 	</div>
-	#if (($velocityCount % 4) == 0)  
+	#if (($velocityCount % 4) == 0 || $velocityCount == $icons.size())  
 		</div>
 	#end
 #end
