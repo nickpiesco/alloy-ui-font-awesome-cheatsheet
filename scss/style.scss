@@ -81,14 +81,14 @@ a {
 			margin-left: 0;
 		}
 	}
-	@media screen and (min-width: 49em) and (max-width: 65em) {
+	@media screen and (min-width: 49em) and (max-width: 64.9375em) {
 		margin-left: 2.12766%;
 		width: 31.914893617021278%;
 		&:nth-of-type(3n + 1) {
 			margin-left: 0;
 		}
 	}
-	@media screen and (min-width: 34em) and (max-width: 49em) {
+	@media screen and (min-width: 34em) and (max-width: 48.9375em) {
 		float: left;
 		margin-left: 2.12766%;
 		width: 48.93617021276595%;
@@ -96,7 +96,7 @@ a {
 			margin-left: 0;
 		}
 	}
-	@media screen and (max-width: 34em) {
+	@media screen and (max-width: 33.9375em) {
 		float: none;
 		margin-left: 0;
 	}
