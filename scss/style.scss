@@ -1,0 +1,102 @@
+@import 'bootstrap-reset-and-layout';
+@import 'icons-alloy';
+
+// --------------------------------------------------------------------------------
+//	Variables
+// --------------------------------------------------------------------------------
+
+$background-color: #fbfbff;
+$text-color: #333;
+$link-color: #003399;
+$link-hover-color: #0066cc;
+$highlight-color: #f8f8f9;
+
+$header-background-color: darken(#003399, 10);
+$header-color: #fff;
+$footer-background-color: #ccc;
+$footer-color: $text-color;
+
+// --------------------------------------------------------------------------------
+//	SCSS
+// --------------------------------------------------------------------------------
+
+body {
+	background-color: $background-color;
+	color: $text-color;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+a {
+	color: $link-color;
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+.row-fluid {
+	margin: 0 auto;
+	max-width: 65em;
+}
+
+.container-header {
+	background: url(../images/bitmap_bg.png) $header-background-color;
+	color: $header-color;
+	padding: 3em 0;
+	text-align: center;
+	a {
+		color: mix($link-hover-color, white);
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}
+
+.container-icons {
+	padding: 2em 0;
+}
+
+.container-footer {
+	background-color: $footer-background-color;
+	font-weight: 300;
+	padding: 1em 0;
+	text-align: right;
+}
+
+// --------------------------------------------------------------------------------
+//	Documentation CSS nicked from the Font Awesome v3.2.1 docs:
+//	http://fortawesome.github.io/Font-Awesome/3.2.1/icons/
+//	(CC BY 3.0 http://creativecommons.org/licenses/by/3.0/)
+// --------------------------------------------------------------------------------
+
+.the-icons .span3 a {
+	border-radius: 3px;
+	cursor: pointer;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	&:hover {
+		background-color: $highlight-color;
+		text-decoration: none;
+		[class^="icon-"]:before,
+		[class*=" icon-"]:before {
+			font-size: 28px;
+			vertical-align: -5px;
+		}
+	}
+	[class^="icon-"],
+	[class*=" icon-"] {
+		display: inline-block;
+		font-size: 14px;
+		margin-right: 10px;
+		text-align: right;
+		width: 32px;
+	}
+}
