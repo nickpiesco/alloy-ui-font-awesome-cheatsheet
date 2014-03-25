@@ -1173,6 +1173,9 @@ textarea {
 
   .row-fluid .thumbnails {
     margin-left: 0; } }
+/*
+ *	Alloy UI: BSD Licence (https://github.com/liferay/alloy-ui/blob/master/LICENSE.md)
+ */
 @font-face {
   font-family: 'fontawesome-alloy';
   src: url("../fonts/fontawesome-alloy.eot");
@@ -2361,11 +2364,17 @@ body {
   background-color: #fbfbff;
   color: #333333;
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   margin: 0; }
+  @media screen and (max-width: 47.9375em) {
+    body {
+      padding-left: 0;
+      padding-right: 0; } }
 
 h1 {
   font-size: 3em;
   font-weight: 300;
+  line-height: 1.2;
   margin-top: 0; }
 
 a {
@@ -2380,7 +2389,7 @@ a {
 .container-header {
   background: url(../images/bitmap_bg.png) #002266;
   color: white;
-  padding: 3em 0;
+  padding: 3em 1em;
   text-align: center; }
   .container-header a {
     color: #7fb2e5; }
@@ -2388,13 +2397,34 @@ a {
       color: #0066cc; }
 
 .container-icons {
-  padding: 2em 0; }
+  padding: 2em 1em; }
 
 .container-footer {
   background-color: #cccccc;
   font-weight: 300;
-  padding: 1em 0;
+  padding: 1em;
   text-align: right; }
+
+@media screen and (min-width: 65em) {
+  .the-icons .span3:nth-of-type(4n + 1) {
+    margin-left: 0; } }
+@media screen and (min-width: 49em) and (max-width: 65em) {
+  .the-icons .span3 {
+    margin-left: 2.12766%;
+    width: 31.914893617021278%; }
+    .the-icons .span3:nth-of-type(3n + 1) {
+      margin-left: 0; } }
+@media screen and (min-width: 34em) and (max-width: 49em) {
+  .the-icons .span3 {
+    float: left;
+    margin-left: 2.12766%;
+    width: 48.93617021276595%; }
+    .the-icons .span3:nth-of-type(2n + 1) {
+      margin-left: 0; } }
+@media screen and (max-width: 34em) {
+  .the-icons .span3 {
+    float: none;
+    margin-left: 0; } }
 
 .the-icons .span3 a {
   border-radius: 3px;

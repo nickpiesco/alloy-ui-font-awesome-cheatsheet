@@ -24,12 +24,18 @@ body {
 	background-color: $background-color;
 	color: $text-color;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
 	margin: 0;
+	@media screen and (max-width: 47.9375em) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 h1 {
 	font-size: 3em;
 	font-weight: 300;
+	line-height: 1.2;
 	margin-top: 0;
 }
 
@@ -48,7 +54,7 @@ a {
 .container-header {
 	background: url(../images/bitmap_bg.png) $header-background-color;
 	color: $header-color;
-	padding: 3em 0;
+	padding: 3em 1em;
 	text-align: center;
 	a {
 		color: mix($link-hover-color, white);
@@ -59,14 +65,41 @@ a {
 }
 
 .container-icons {
-	padding: 2em 0;
+	padding: 2em 1em;
 }
 
 .container-footer {
 	background-color: $footer-background-color;
 	font-weight: 300;
-	padding: 1em 0;
+	padding: 1em;
 	text-align: right;
+}
+
+.the-icons .span3 {
+	@media screen and (min-width: 65em) {
+		&:nth-of-type(4n + 1) {
+			margin-left: 0;
+		}
+	}
+	@media screen and (min-width: 49em) and (max-width: 65em) {
+		margin-left: 2.12766%;
+		width: 31.914893617021278%;
+		&:nth-of-type(3n + 1) {
+			margin-left: 0;
+		}
+	}
+	@media screen and (min-width: 34em) and (max-width: 49em) {
+		float: left;
+		margin-left: 2.12766%;
+		width: 48.93617021276595%;
+		&:nth-of-type(2n + 1) {
+			margin-left: 0;
+		}
+	}
+	@media screen and (max-width: 34em) {
+		float: none;
+		margin-left: 0;
+	}
 }
 
 // --------------------------------------------------------------------------------
